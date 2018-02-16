@@ -19,13 +19,15 @@ const Ticker = require('./lib/Ticker')
  * Ticker Source.
  * @type {Object}
  */
+// const source = require('./lib/source/Dummy')
+// const source = require('./lib/source/Bittrex')
 const source = require('./lib/source/GDAX')
 
 /**
  * Ticker Symbol.
  * @type {String}
  */
-const symbol = 'BTC-USD'
+const symbol = source.symbol
 
 /**
  * Creates and starts a new {@link Ticker} using {symbol, ...source}.
