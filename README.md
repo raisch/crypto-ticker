@@ -16,11 +16,11 @@ Simple ticker for tracking a cryptocurrency
 This project provides a framework for retrieving a result from an external API, converting it for use,
 and writing it to an output.
 
-The `Ticker` class used four functions that can be imported from a predefined `source`:
+The `Ticker` class used four functions that are typically imported from a predefined `source`:
 
 - `initializer()` - allows for custom initialization when a Ticker is instantiated. (Optional)
 - `reader()` - returns a promise of a data object
-- `converter()` - converts the result returned by the reader to a useable format (Optional)
+- `converter()` - converts the result returned by the reader to a format useable by the writer (Optional)
 - `writer()` - writes the result
 
 
