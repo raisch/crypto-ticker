@@ -5,11 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js",
-    "build:docs": "./node_modules/.bin/jsdoc ./index.js ./lib ./lib/source",
+    "build:docs": "./node_modules/.bin/jsdoc ${npm_package_config_doc_sources}",
     "doc": "npm run build:docs && open ./out/index.html"
   },
   "author": "",
   "license": "MIT",
+  "config": {
+    "doc": {
+      "sources": "./index.js ./lib ./lib/source ./README.md"
+    }
+  },
+  "directories": {
+    "lib": "./lib"
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "colors": "^1.1.2",

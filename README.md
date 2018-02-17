@@ -1,5 +1,6 @@
 # crypto-ticker
-Simple ticker for tracking a cryptocurrency
+
+Simple ticker for tracking the price of a crytocurrency.
 
 ## Installation
 `npm i`

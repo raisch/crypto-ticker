@@ -20,8 +20,8 @@ const Ticker = require('./lib/Ticker')
  * @type {Object}
  */
 // const source = require('./lib/source/Dummy')
-// const source = require('./lib/source/Bittrex')
-const source = require('./lib/source/GDAX')
+const source = require('./lib/source/Bittrex')
+// const source = require('./lib/source/GDAX')
 
 /**
  * Ticker Symbol.
